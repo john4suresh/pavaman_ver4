@@ -1816,7 +1816,8 @@ header.header-scroll .logo-strong{
 .inp-text:before,
 .inp-name:before,
 .inp-phone:before,
-.inp-email:before{
+.inp-email:before,
+.inp-course:before{
 	content: '';
 	position: absolute;
 	font-family: FontAwesome;
@@ -1836,6 +1837,9 @@ header.header-scroll .logo-strong{
 }
 .inp-email:before{
 	content: '\f1fa';
+}
+.inp-course:before{
+	content: '\f19d';
 }
 .inp-text:before{
 	content: '\f27b';
@@ -6199,4 +6203,19 @@ blockquote:before{
 	.enquiryForm {
 		max-width: 350px;
 	  }
+  }
+
+  .course {
+	display: block;
+	width: 100%;
+	height: 46px;
+	padding: 8px 10px 10px 42px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 18px;
+	color: #fff;
+	background-color: transparent;
+	font-weight: 500;
+	transition: .3s ease;
   }
