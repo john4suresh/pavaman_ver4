@@ -243,6 +243,11 @@ header.header-scroll .nav-menu{
 	left: 0;
 	opacity: 1;
 }
+
+.nav-menu .register, .nav-menu .enquire_header_button {
+	display: block;
+	margin: 10px;
+}
 @media (min-width:992px){
 	.nav-menu{
 		margin-top: 0;
@@ -260,6 +265,9 @@ header.header-scroll .nav-menu{
 	header.header-scroll .nav-menu{
 		height: auto;
 		background-color: transparent;
+	}
+	.nav-menu .register, .nav-menu .enquire_header_button {
+		display: none;
 	}
 }
 .nav-list li{
@@ -393,9 +401,15 @@ header.header-scroll .nav-menu{
 	overflow:hidden;
 	transform: translate(0,-50%);
 }
+#register_enquire_container {
+	display: none;
+}
 @media (min-width:992px){
 	.nav-btn{
 		display:none;
+	}
+	#register_enquire_container {
+		display: block;
 	}
 }
 .nav-btn span{
@@ -929,6 +943,21 @@ header.header-scroll .logo-strong{
 
 .fonty{
 	font-size: 12px;
+}
+
+.price-info ol li {
+	list-style: none;
+}
+
+.price-info ol li::before {
+	content: '';
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-image: url(../img/icon-tab-1.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 5px;
 }
 
 .price-info .title-left-sub{
@@ -1636,19 +1665,7 @@ header.header-scroll .logo-strong{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-.testimonial-item:before {
-	content: '';
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: calc(100% - 40px);
-	height: calc(100% - 40px);
-	border: 2px solid #4150A3;
-	transition: .4s ease;
-	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-	pointer-events: none;
+	flex-direction: column;
 }
 .testimonial-item-img img{
 	position: relative;
@@ -1657,12 +1674,17 @@ header.header-scroll .logo-strong{
 	height: 450px;
 	object-fit: cover;
 	margin: auto;
+	border-radius:15px;
+	box-shadow: 5px 10px 15px #222;
+	padding: 20px;
+}
+.testimonial-item-img {
 	padding: 30px;
 }
-.testimonial-item-img .name{
+.testimonial-item .name{
 	letter-spacing: 2px;
 }
-.testimonial-item-img .prof{
+.testimonial-item .prof{
 	font-weight: 700;
 	font-size: 13px;
 	line-height: 8px;
@@ -1739,6 +1761,27 @@ header.header-scroll .logo-strong{
 .slider-testimonials .slick-dots li:hover button,
 .slider-testimonials .slick-dots li.slick-active button{
 	background: #4150A3;
+}
+
+.slider-testimonials .slick-arrow{
+	position: absolute;
+	top: 12px;
+	z-index: 2;
+	color: #fff;
+	font-size: 60px;
+	transition: .3s ease;
+	padding: 10px;
+}
+.slider-testimonials .slick-arrow:hover{
+	color: #4150A3;
+}
+.slider-testimonials .slick-arrow.slick-arrow-prev{
+	left: -20px;
+	top: 50%;
+}
+.slider-testimonials .slick-arrow.slick-arrow-next{
+	right: -20px;
+	top: 50%;
 }
 
 /*-------------------- S-CONTACTS --------------------*/
@@ -6134,11 +6177,22 @@ blockquote:before{
 	border-radius: 50%;
 	padding: 5px;
 	position: absolute;
-	top: -20px;
+	top: 0px;
+	border: 1px solid black;
   }
 
   .enquiryForm .cancel-button img {
 	color: black;
+  }
+
+  .enquiryForm h3 {
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 15px;
+  }
+  .enquiryForm .data_consent {
+	font-size: 14px;
+	color: #a4a4a4;
   }
 
   @media (max-width: 479px) {

@@ -153,11 +153,13 @@ $( window ).on( 'load', function(){
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			dots: true,
-			arrows: false,
+			arrows: true,
 			speed: 600,
 			cssEase: 'ease-in-out',
 			autoplay: false,
 			autoplaySpeed: 4500,
+			nextArrow: '<span class="slick-arrow-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
+			prevArrow: '<span class="slick-arrow-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
 			responsive: [
 			{
 				breakpoint: 768,
@@ -480,5 +482,13 @@ $( window ).on( 'load', function(){
 
 	$("#cancel_button").click(function () {
 		$(".enquiryForm").css("right", "-400px");
-	})
+	});
+
+	$("#enquire_header_button").click(function () {
+		$(".enquiryForm").css("right", "0px");
+	});
+	
+	$("#enquire_menu_button").click(function () {
+		$(".enquiryForm").css("right", "0px");
+	});
 });
