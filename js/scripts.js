@@ -326,7 +326,7 @@ $( window ).on( 'load', function(){
 	*/
 	$( window )
 	.on( 'scroll.myTemplate', scrollWindow)
-	.trigger( 'sctoll.myTemplate' );
+	.trigger( 'scroll.myTemplate' );
 	function scrollWindow() {
 		if ($( window ).scrollTop() > 500) {
 			$('.to-top').addClass('active');
