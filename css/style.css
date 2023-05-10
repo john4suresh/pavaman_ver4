@@ -10,6 +10,7 @@
 html{
 	-webkit-text-size-adjust:100%;
 	-ms-text-size-adjust:100%;
+	overflow-x: hidden;
 }
 body{
 	color: #a4a4a4;
@@ -60,7 +61,7 @@ input[type="text"],input[type="tel"],input[type="email"],input[type="search"],te
 	font-size: 14px;
 	line-height: 18px;
 	color: #fff;
-	background-color: transparent;
+	background-color: #FFF;
 	font-weight: 500;
 	transition: .3s ease;
 }
@@ -1683,6 +1684,7 @@ header.header-scroll .logo-strong{
 }
 .testimonial-item .name{
 	letter-spacing: 2px;
+	align-self: flex-start;
 }
 .testimonial-item .prof{
 	font-weight: 700;
@@ -1694,6 +1696,14 @@ header.header-scroll .logo-strong{
 	color: #aaa;
 	margin: 5px 0 8px;
 	padding-bottom: 15px;
+	align-self: flex-start;
+}
+
+.testimonial-item .prof.prof-1{
+	padding-bottom: 0px;
+}
+.testimonial-item .prof.prof-2{
+	padding-bottom: 0px;
 }
 .testimonial-item .testimon-content{
 	font-style: italic;
@@ -1825,7 +1835,7 @@ header.header-scroll .logo-strong{
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 18px;
-	color: #fff;
+	color: #000;
 	top: 14px;
 	left: 16px;
 }
@@ -2050,6 +2060,12 @@ footer .soc-link{
 }
 .copyright .rovadex:hover{
 	color: #4150A3;
+}
+
+/*------------------- ENQUIRY BOTTOM -------------------*/
+
+.enquiry_bottom {
+	display: none;
 }
 /*------------------- PAGE-TITLE -------------------*/
 .page-title{
@@ -3871,6 +3887,14 @@ blockquote:before{
 		transform: translateY(0);
 		opacity: 1;
 	}
+	.slider-testimonials .slick-arrow.slick-arrow-prev{
+		left: -5px;
+		top: 50%;
+	}
+	.slider-testimonials .slick-arrow.slick-arrow-next{
+		right: -5px;
+		top: 50%;
+	}
 }
 
 @media(max-width: 991px){
@@ -4147,6 +4171,15 @@ blockquote:before{
 		margin-bottom: 26px;
 	}
 
+	.slider-testimonials .slick-arrow.slick-arrow-prev{
+		left: 0px;
+		top: 50%;
+	}
+	.slider-testimonials .slick-arrow.slick-arrow-next{
+		right: 0px;
+		top: 50%;
+	}
+
 }
 
 @media(max-width: 860px){
@@ -4285,6 +4318,9 @@ blockquote:before{
 	.best-prices {
 		padding: 25px 0 25px;
 	}
+	.best-prices .drone-2 {
+		flex-direction: column-reverse;
+	}
 	.s-team{
 		padding: 25px 0 25px;
 	}
@@ -4295,7 +4331,7 @@ blockquote:before{
 		padding: 25px 0 25px;
 	}
 	.price-img-block{
-		display: none;
+		display: block;
 	}
 	h2{
 		font-size: 25px;
@@ -4498,6 +4534,12 @@ blockquote:before{
 	}
 	.main-slider-nav{
 		display: none;
+	}
+	.slider-testimonials .slick-arrow.slick-arrow-prev{
+		left: 0px;
+	}
+	.slider-testimonials .slick-arrow.slick-arrow-next{
+		right: 0px;
 	}
 }
 
@@ -4726,6 +4768,53 @@ blockquote:before{
 		height: 90px;
 		margin-right: 20px;
 	}
+	.price-img-cover .price-drone {
+		max-width: 350px;
+		right: 50px;
+	}
+
+	.testimonial-item-img img{
+		z-index: 1;
+		width: 300px;
+		height: 300px;
+		object-fit: cover;
+		margin: auto;
+		border-radius:15px;
+		padding: 15px;
+	}
+
+	.slide-testimonial-container {
+		flex-direction: column;
+	}
+
+	.testimonial-item .name {
+		align-self: center;
+	}
+
+	.testimonial-item .prof {
+		align-self: center;
+	}
+
+	.enquiry_bottom {
+		display: block;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		z-index: 99;
+		background-color: #4150A3;
+		text-decoration: none;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 35px;
+		text-align: center;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		border: 2px solid #4150A3;
+		padding: 7px 20px;
+		color: #fff;
+		border-radius: 20px;
+		transition: all 0.3s ease-out;
+	}
 }
 
 @media(max-width: 479px){
@@ -4786,6 +4875,10 @@ blockquote:before{
 	.opportunitie-item .item-wrap .item-value {
 		font-size: 10px;
 		line-height: 14px;
+	}
+	.price-img-cover .price-drone {
+		max-width: 200px;
+		right: 0px;
 	}
 }
 /*----------------------------------------*/
@@ -6130,7 +6223,7 @@ blockquote:before{
     border: 2px solid #4150A3;
     padding: 10px 5px;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 10px 0px 0px 10px;
     transition: all 0.3s ease-out;
   }
 
@@ -6151,7 +6244,7 @@ blockquote:before{
 	min-width: 400px;
 	background-color: black;
 	padding: 25px;
-	border-radius: 15px;
+	border-radius: 15px 0px 0px 15px;
   }
 
   .enquiryForm .form-cover {
@@ -6214,8 +6307,8 @@ blockquote:before{
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 18px;
-	color: #fff;
-	background-color: transparent;
+	color: #000;
+	background-color: #FFF;
 	font-weight: 500;
 	transition: .3s ease;
   }
