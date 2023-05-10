@@ -6313,3 +6313,6 @@ blockquote:before{
 	font-weight: 500;
 	transition: .3s ease;
   }
+.certificate{
+	background:#4150A3
+}
