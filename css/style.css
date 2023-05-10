@@ -1668,6 +1668,7 @@ header.header-scroll .logo-strong{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	border-radius: 15px;
 }
 .testimonial-item-img img{
 	position: relative;
