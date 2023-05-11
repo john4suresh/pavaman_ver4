@@ -1808,6 +1808,9 @@ margin-right: 20px;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background: #272727;
+    padding: 10px;
+    border-radius: 7px;
 }
 
 .slide-trainee-container .slide-item-img {
