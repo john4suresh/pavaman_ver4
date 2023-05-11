@@ -1658,7 +1658,7 @@ header.header-scroll .logo-strong{
 	display: flex;
 	flex-direction: row;
 	background: #272727;
-	border-radius: 15px;
+	border-radius: 20px;
 }
 .testimonial-item{
 	background: #272727;
@@ -1668,7 +1668,7 @@ header.header-scroll .logo-strong{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	border-radius: 15px;
+	border-radius: 20px;
 }
 .testimonial-item-img img{
 	position: relative;
@@ -1690,8 +1690,8 @@ header.header-scroll .logo-strong{
 }
 .testimonial-item .prof{
 	font-weight: 700;
-	font-size: 13px;
-	line-height: 8px;
+	font-size: 16px;
+	line-height: 20px;
 	text-align: center;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -1703,9 +1703,11 @@ header.header-scroll .logo-strong{
 
 .testimonial-item .prof.prof-1{
 	padding-bottom: 0px;
+	margin-bottom: 5px;
 }
 .testimonial-item .prof.prof-2{
 	padding-bottom: 0px;
+	margin-bottom: 5px;
 }
 .testimonial-item .testimon-content{
 	font-style: italic;
@@ -1792,6 +1794,63 @@ header.header-scroll .logo-strong{
 	top: 50%;
 }
 .slider-testimonials .slick-arrow.slick-arrow-next{
+	right: -20px;
+	top: 50%;
+}
+
+.courses-trainee .slider-trainees .slide-trainee {
+	max-width: 280px;
+margin-right: 20px;
+}
+
+.slide-trainee-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.slide-trainee-container .slide-item-img {
+	max-width: 150px;
+	max-height: 150px;
+	margin-bottom: 20px;
+}
+
+.slide-item-img img {
+	max-width: 100%;
+	border-radius: 50%;
+}
+
+.slide-trainee-item .name {
+	text-align: center;
+}
+
+.slide-trainee-item .prof {
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.slide-trainee-item .slide-trainee-content {
+	text-align: justify;
+}
+
+.slider-trainees .slick-arrow{
+	position: absolute;
+	top: 12px;
+	z-index: 2;
+	color: #fff;
+	font-size: 60px;
+	transition: .3s ease;
+	padding: 10px;
+}
+.slider-trainees .slick-arrow:hover{
+	color: #4150A3;
+}
+.slider-trainees .slick-arrow.slick-arrow-prev{
+	left: -20px;
+	top: 50%;
+}
+.slider-trainees .slick-arrow.slick-arrow-next{
 	right: -20px;
 	top: 50%;
 }
@@ -2697,6 +2756,10 @@ footer .soc-link{
 }
 .pagination-item:hover a{
 	border-color: #4150A3;
+}
+
+.about-top.certificate {
+	background-color: #4150A3;
 }
 
 /*----------------- S-SINGLE-PRODUCT -----------------*/

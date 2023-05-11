@@ -172,6 +172,35 @@ $( window ).on( 'load', function(){
 	}
 
 	/**
+
+		/**
+	 *-------------------- Course Trainee SLIDER  -------------------
+	*/
+	if( $( '.slider-trainees' )[0] ){
+		$( '.slider-trainees' ).slick({
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			dots: false,
+			arrows: true,
+			speed: 600,
+			cssEase: 'ease-in-out',
+			autoplay: false,
+			autoplaySpeed: 4500,
+			centerPadding: '60px',
+			nextArrow: '<span class="slick-arrow-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
+			prevArrow: '<span class="slick-arrow-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
+			responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2
+				}
+			}
+			]
+		});
+	}
+
+	/**
 	 *-------------------- SLIDER VIDEO  -------------------
 	*/
 	if( $( '.slider-video' )[0] ){
@@ -489,6 +518,10 @@ $( window ).on( 'load', function(){
 	});
 	
 	$("#enquire_menu_button").click(function () {
+		$(".enquiryForm").css("right", "0px");
+	});
+
+	$("#enquiry_bottom").click(function () {
 		$(".enquiryForm").css("right", "0px");
 	});
 });
