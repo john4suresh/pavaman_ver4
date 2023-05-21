@@ -540,4 +540,34 @@ $( window ).on( 'load', function(){
 	$("#enquiry_bottom").click(function () {
 		$(".enquiryForm").css("right", "0px");
 	});
+
+	var select = $('#course'),
+        options = select.find('option');
+		console.log({options})
+    
+    $('[type="radio"]').click(function(event){
+		console.log(event)
+		if(event.target.id === "agri") {
+			var visibleItems = options.filter(ele => [0,1,2,3].includes(ele)).show();
+			console.log({visibleItems})
+        	options.not(visibleItems).hide();
+		}
+		if(event.target.id === "photography") {
+			var visibleItems = options.filter(ele => [0,4,5,6].includes(ele)).show();
+			console.log({visibleItems})
+        	options.not(visibleItems).hide();
+		}
+		if(event.target.id === "survey") {
+			var visibleItems = options.filter(ele => [0,7,8,9].includes(ele)).show();
+			console.log({visibleItems})
+        	options.not(visibleItems).hide();
+		}
+        // var visibleItems = options.filter('[value*="' + $(this).val()  + '"]').show();
+        // options.not(visibleItems).hide();
+        
+        // if(visibleItems.length > 0)
+        // {
+        //     select.val(visibleItems.eq(0).val());
+        // }
+    });
 });
