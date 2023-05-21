@@ -659,6 +659,9 @@ p {
   z-index: 1;
   margin-bottom: 3px;
 }
+.section__title.white {
+  color: #ffffff;
+}
 @media (max-width: 575px) {
   .section__title {
     font-size: 33px;
@@ -2625,6 +2628,9 @@ p {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 20px;
+}
+.course__title.blue a{
+  color: #4150A3;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .course__title {

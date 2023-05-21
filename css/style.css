@@ -60,8 +60,8 @@ input[type="text"],input[type="tel"],input[type="email"],input[type="search"],te
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 18px;
-	color: #fff;
-	background-color: #FFF;
+	color: #000000;
+	background-color: #ffffff;
 	font-weight: 500;
 	transition: .3s ease;
 }
@@ -219,9 +219,10 @@ header{
 	border-bottom: 1px solid transparent;
 }
 header.header-scroll{
-	padding: 10px 0;
+	padding: 20px 0;
 	background: rgba(19, 18, 19, 1);
 	border-color: rgba(69,167,239,.7);
+	padding-top: 30px;
 }
 header a{
 	color: #fff;
@@ -1994,6 +1995,23 @@ margin-right: 20px;
 	color: #f23849;
 }
 
+.s-main-contacts.s-contacts .inp-text:before,
+.s-main-contacts.s-contacts .inp-name:before,
+.s-main-contacts.s-contacts .inp-phone:before,
+.s-main-contacts.s-contacts .inp-email:before,
+.s-main-contacts.s-contacts .inp-course:before{
+	color: #ffffff;
+}
+
+.s-main-contacts.s-contacts input[type="text"],
+.s-main-contacts.s-contacts input[type="tel"],
+.s-main-contacts.s-contacts input[type="email"],
+.s-main-contacts.s-contacts input[type="search"],
+.s-main-contacts.s-contacts textarea{
+	color: #fff;
+	background-color: transparent;
+}
+
 /*------------------------ S-MAP ------------------------*/
 .cont-map{
 	height: 415px;
@@ -2173,6 +2191,19 @@ footer .soc-link{
 .about-top{
 	padding: 40px 0;
 }
+
+.about-top .about-info-list li::before,
+.objectives li::before {
+	content: '';
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-image: url(../img/icon-tab-1.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+}
+
 .contacts-top.about-top{
 	padding: 180px 0 166px;
 }
@@ -5053,7 +5084,7 @@ blockquote:before{
   }
   .course__tag-2 a {
 	font-size: 16px;
-	color: #534150A3545b;
+	/* color: #534150A3545b; */
 	font-weight: 500;
   }
   .course__tag-2 a:hover {
@@ -5063,6 +5094,7 @@ blockquote:before{
 	font-size: 20px;
 	font-weight: 600;
 	margin-bottom: 20px;
+	min-height: 60px;
   }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.course__title {
@@ -6403,3 +6435,25 @@ blockquote:before{
 	margin-left: auto;
   margin-right: auto;
 }
+
+/* ol li::before {
+	content: '';
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-image: url(../img/icon-tab-1.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+}
+
+ul li::before {
+	content: '';
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-image: url(../img/icon-tab-1.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+} */

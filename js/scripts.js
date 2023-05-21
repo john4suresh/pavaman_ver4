@@ -90,6 +90,8 @@ $( window ).on( 'load', function(){
 			fade: true,
 			speed: 900,
 			infinite: true,
+			autoplay: false,
+			autoplaySpeed: 8000,
 			cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
 			touchThreshold: 100,
 			asNavFor: '.main-slider-nav'
@@ -106,6 +108,8 @@ $( window ).on( 'load', function(){
 			focusOnSelect: true,
 			infinite: true,
 			speed: 900,
+			autoplay: false,
+			autoplaySpeed: 8000,
 			nextArrow: '<span class="slick-arrow-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
 			prevArrow: '<span class="slick-arrow-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
 			responsive: [
@@ -144,6 +148,18 @@ $( window ).on( 'load', function(){
 			prevArrow: '<span class="slick-arrow-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>'
 		});
 	}
+
+	$('.slider-opportunities').on('afterChange', function(event, slick, direction){
+		if(direction === 1) {
+			$('.s-opportunities').css({"background-image": "url(../img/Surveying.png)"})
+		}
+		if(direction === 2) {
+			$('.s-opportunities').css({"background-image": "url(../img/Photogrammetry_image.png)"})
+		}
+		if(direction === 0) {
+			$('.s-opportunities').css({"background-image": "url(../img/Agri_Spraying.png)"})
+		}
+	  });
 
 	/**
 	 *-------------------- TESTIMONIALS SLIDER  -------------------
