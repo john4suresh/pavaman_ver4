@@ -13,7 +13,7 @@ html{
 	overflow-x: hidden;
 }
 body{
-	color: #a4a4a4;
+	color: #fff;
 	font-size: 17px;
 	line-height: 1.47em;
 	font-family: 'Open Sans', serif;
@@ -116,7 +116,8 @@ h1,h2,h3,h4,h5,h6{
 }
 .page-title .title,
 h1{
-	font-size: 42px;
+	font-size: 22px;
+	width: 50%;
 }
 h2{
 	font-size: 24px;
@@ -156,7 +157,7 @@ h5{
 	letter-spacing: 0.07em;
 }
 h6{
-	font-size: 17px;
+	font-size: 15px;
 	letter-spacing: 0.05em;
 }
 .slogan{
@@ -322,7 +323,7 @@ header.header-scroll .nav-menu{
 		position: absolute;
 		top: 100%;
 		margin-top: 17px;
-		min-width: 200px;
+		min-width: 300px;
 		transition: all 0.3s ease-in;
 		opacity: 0;
 		pointer-events: none;
@@ -943,7 +944,8 @@ header.header-scroll .logo-strong{
 }
 
 .fonty{
-	font-size: 12px;
+	font-size: 16px;
+	line-height: 35px;
 }
 
 .price-info ol li {
@@ -1573,7 +1575,7 @@ header.header-scroll .logo-strong{
 	font-size: 38px;
 	line-height: 1em;
 	margin-bottom: 69px;
-	color: #4150A3;
+	color: #fff;
 }
 .opportunities-cover{
 	max-width: 904px;
@@ -1712,7 +1714,8 @@ header.header-scroll .logo-strong{
 }
 .testimonial-item .testimon-content{
 	font-style: italic;
-	letter-spacing: 0.05em;
+	font-size:35px;
+	line-height: 40px;
 	color: #fff;
 	position: relative;
 	padding: 32px 35px;
@@ -2144,11 +2147,11 @@ footer .soc-link{
 	padding-top: 86px;
 }
 .page-title .title{
-	text-align: center;
+	text-align: left;
 }
 .breadcrumbs ul{
 	display: flex;
-	justify-content: center;
+	justify-content: left;
 	flex-wrap: wrap;
 }
 .breadcrumbs li a,
@@ -2357,7 +2360,7 @@ footer .soc-link{
 	text-align: center;
 }
 .s-clients img{
-	max-width: 100%;
+	max-width: 60%;
 }
 .s-clients.s-clients-home{
 	padding-top: 45px;
@@ -4353,6 +4356,7 @@ blockquote:before{
 	.to-top span {
 		width: 54px;
 		height: 54px;
+		margin-bottom: 50px;
 		background: #4150A3;
 		border: none;
 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
@@ -4867,6 +4871,7 @@ blockquote:before{
 	.enquiry_bottom {
 		display: block;
 		position: fixed;
+		width: 100%;
 		bottom: 0;
 		left: 0;
 		z-index: 99;
@@ -4881,7 +4886,7 @@ blockquote:before{
 		border: 2px solid #4150A3;
 		padding: 7px 20px;
 		color: #fff;
-		border-radius: 20px;
+		
 		transition: all 0.3s ease-out;
 	}
 }
@@ -6365,6 +6370,16 @@ blockquote:before{
 	.enquiryForm {
 		max-width: 350px;
 	  }
+	  .to-top i {
+		z-index: 1;
+		position: absolute;
+		top: 28%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		color: #fff;
+		font-size: 20px;
+		transition: .3s ease;
+	}
   }
 
   .course {
